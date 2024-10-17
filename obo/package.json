@@ -1,0 +1,21 @@
+{
+  "name": "obo",
+  "version": "1.0.0",
+  "description": "Simulation of on-behalf-of token flow",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel start:client start:middletier start:downstream",
+    "start:client": "node client.js",
+    "start:middletier": "node middletier.js",
+    "start:downstream": "node downstream.js"
+  },
+  "author": "Abhishek Pandey",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "npm-run-all": "^4.1.5"
+  }
+}
