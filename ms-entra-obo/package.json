@@ -1,0 +1,23 @@
+{
+  "name": "ms-entra-obo",
+  "version": "1.0.0",
+  "description": "Simulation of on-behalf-of token exchange with Microsoft Entra ID",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel start:client start:middletier",
+    "start:client": "node client.js",
+    "start:middletier": "node middletier.js"
+  },
+  "author": "Abhishek Pandey",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/identity": "^4.4.1",
+    "@azure/msal-node": "^2.15.0",
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "npm-run-all": "^4.1.5"
+  }
+}
